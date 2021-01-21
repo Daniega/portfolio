@@ -1,4 +1,21 @@
 .text-section {
 	font-weight: 800;
 	font-size: 4vw;
+	margin: 50px auto 50px auto;
+}
+
+.text-section-purple {
+	font-weight: 800;
+	font-size: 4vw;
+	color: #7805f7;
+}
+
+@media screen and (min-width: 800px) {
+	.text-section {
+		font-size: 30px;
+	}
+
+	.text-section-purple {
+		font-size: 30px;
+	}
 }

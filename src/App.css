@@ -4,10 +4,23 @@
 
 .bold-purple {
 	color: #7805f7;
+}
+
+.heading-text {
+	font-weight: 800;
+}
+
+.bold-purple-underline {
+	color: #7805f7;
 	text-decoration: underline;
 }
 
 .normal-text {
-	font-weight: 800;
-	font-size: 4vw;
+	font-size: 3vw;
+}
+
+@media screen and (min-width: 1200px) {
+	.normal-text {
+		font-size: 30px;
+	}
 }

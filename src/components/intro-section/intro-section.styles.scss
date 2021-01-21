@@ -1,0 +1,29 @@
+.intro-section {
+	margin: 100px auto 50px auto;
+	font-weight: 900;
+	font-size: 5vw;
+	img {
+		height: 250px;
+		border-radius: 10%;
+		margin-bottom: 50px;
+	}
+
+	.five-stars {
+		margin: 50px auto;
+		img {
+			margin-top: auto;
+			margin-bottom: auto;
+			width: 20vw;
+			height: auto;
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		span {
+			font-size: 50px;
+		}
+		.hello-text {
+			font-size: 50px;
+		}
+	}
+}

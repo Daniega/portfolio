@@ -3,15 +3,17 @@ import './App.css';
 
 import Footer from './components/footer/footer.component';
 import Header from './components/header/header.component';
-import IntroHeading from './components/intro-heading/intro-heading.component';
-import Skills from './components/skills/skills.component';
+import IntroSection from './components/intro-section/intro-section.component';
+import SkillsSection from './components/skills-section/skills-section.component';
+import ProjectsSection from './components/projects-section/projects-section.components';
 
 const App = () => {
 	return (
 		<div className="App">
 			<Header />
-			<IntroHeading />
-			<Skills />
+			<IntroSection />
+			<SkillsSection />
+			<ProjectsSection />
 			<Footer />
 		</div>
 	);

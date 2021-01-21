@@ -2,10 +2,10 @@ import React from 'react';
 
 import './text-section.styles.scss';
 
-const TextSection = ({ children }) => {
+const TextSection = ({ children, purple }) => {
 	return (
-		<div className="text-section">
-			<text>{children}</text>
+		<div className={purple ? 'text-section-purple' : 'text-section'}>
+			<span>{children}</span>
 		</div>
 	);
 };
