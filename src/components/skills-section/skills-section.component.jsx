@@ -1,4 +1,6 @@
 import React from 'react';
+
+//Grid from material UI
 import Grid from '@material-ui/core/Grid';
 
 //Logos
@@ -15,8 +17,10 @@ import sassLogo from '../../assets/sass.svg';
 import webpackLogo from '../../assets/webpack.svg';
 import visualLogo from '../../assets/visual.svg';
 
-import ScrollAnimation from 'react-animate-on-scroll';
+//Skill component
+import Skill from '../skill/skill.component';
 
+//Stylesheet
 import './skills-section.styles.scss';
 
 //TODO - create a new component for every Grid section for a reusable, short code
@@ -26,113 +30,28 @@ const SkillsSection = () => {
 		<div className="skills-section">
 			<div className="skills-section-title normal-text heading-text">My Stack</div>
 			<Grid container spacing={2} justify="space-evenly" direction="row">
-				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
-						<div className="skill-container">
-							<div className="skill-title">Javascript</div>
-							<img src={javascriptLogo} alt="Javascript" height="80px" width="80px" />
-						</div>
-					</ScrollAnimation>
-				</Grid>
-				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
-						<div className="skill-container">
-							<div className="skill-title">MongoDB</div>
-							<img src={mongoLogo} alt="React" height="80px" width="80px" />
-						</div>
-					</ScrollAnimation>
-				</Grid>
+				<Skill skillTitle="Javascript" skillLogo={javascriptLogo} />
+				<Skill skillTitle="MongoDB" skillLogo={mongoLogo} />
 			</Grid>
 			<Grid container spacing={2} justify="space-evenly" direction="row">
-				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
-						<div className="skill-container">
-							<div className="skill-title">React</div>
-							<img src={reactLogo} alt="React" height="80px" width="80px" />
-						</div>
-					</ScrollAnimation>
-				</Grid>
-				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
-						<div className="skill-container">
-							<div className="skill-title">Firebase</div>
-							<img src={firebaseLogo} alt="React" height="80px" width="80px" />
-						</div>
-					</ScrollAnimation>
-				</Grid>
+				<Skill skillTitle="React" skillLogo={reactLogo} />
+				<Skill skillTitle="Firebase" skillLogo={firebaseLogo} />
 			</Grid>
 			<Grid container spacing={2} justify="space-evenly" direction="row">
-				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
-						<div className="skill-container">
-							<div className="skill-title">Redux</div>
-							<img src={reduxLogo} alt="React" height="80px" width="80px" />
-						</div>
-					</ScrollAnimation>
-				</Grid>
-				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
-						<div className="skill-container">
-							<div className="skill-title">Scss</div>
-							<img src={sassLogo} alt="React" height="80px" width="80px" />
-						</div>
-					</ScrollAnimation>
-				</Grid>
-			</Grid>
-
-			<Grid container spacing={2} justify="space-evenly" direction="row">
-				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
-						<div className="skill-container">
-							<div className="skill-title">NodeJs</div>
-							<img src={nodejsLogo} alt="React" height="80px" width="80px" />
-						</div>
-					</ScrollAnimation>
-				</Grid>
-				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
-						<div className="skill-container">
-							<div className="skill-title">Webpack</div>
-							<img src={webpackLogo} alt="React" height="80px" width="80px" />
-						</div>
-					</ScrollAnimation>
-				</Grid>
+				<Skill skillTitle="Redux" skillLogo={reduxLogo} />
+				<Skill skillTitle="Scss" skillLogo={sassLogo} />
 			</Grid>
 			<Grid container spacing={2} justify="space-evenly" direction="row">
-				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
-						<div className="skill-container">
-							<div className="skill-title">HTML5</div>
-							<img src={htmlLogo} alt="React" height="80px" width="80px" />
-						</div>
-					</ScrollAnimation>
-				</Grid>
-				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
-						<div className="skill-container">
-							<div className="skill-title">Git</div>
-							<img src={gitLogo} alt="React" height="80px" width="80px" />
-						</div>
-					</ScrollAnimation>
-				</Grid>
+				<Skill skillTitle="NodeJs" skillLogo={nodejsLogo} />
+				<Skill skillTitle="Webpack" skillLogo={webpackLogo} />
 			</Grid>
 			<Grid container spacing={2} justify="space-evenly" direction="row">
-				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
-						<div className="skill-container">
-							<div className="skill-title">CSS3</div>
-							<img src={cssLogo} alt="React" height="80px" width="80px" />
-						</div>
-					</ScrollAnimation>
-				</Grid>
-				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
-						<div className="skill-container">
-							<div className="skill-title">VS Code</div>
-							<img src={visualLogo} alt="React" height="80px" width="80px" />
-						</div>
-					</ScrollAnimation>
-				</Grid>
+				<Skill skillTitle="HTML5" skillLogo={htmlLogo} />
+				<Skill skillTitle="Git" skillLogo={gitLogo} />
+			</Grid>
+			<Grid container spacing={2} justify="space-evenly" direction="row">
+				<Skill skillTitle="CSS3" skillLogo={cssLogo} />
+				<Skill skillTitle="VS Code" skillLogo={visualLogo} />
 			</Grid>
 		</div>
 	);
