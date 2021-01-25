@@ -42,7 +42,7 @@ const useStyles = makeStyles({
 	}
 });
 
-const SimpleCard = ({ imageUrl, projectName, projectLink, children }) => {
+const ProjectCard = ({ imageUrl, projectName, projectLink, children }) => {
 	const classes = useStyles();
 	const projectTechnologies = children; //get project description from props.children
 
@@ -77,4 +77,4 @@ const SimpleCard = ({ imageUrl, projectName, projectLink, children }) => {
 	);
 };
 
-export default SimpleCard;
+export default ProjectCard;

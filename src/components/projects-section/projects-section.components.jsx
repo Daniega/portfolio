@@ -3,10 +3,12 @@ import Grid from '@material-ui/core/Grid';
 
 //components
 import TextSection from '../text-section/text-section.component';
-import SimpleCard from '../project/project-card';
+import ProjectCard from '../project/project-card';
 
 import eCommProjectImage from '../../assets/ecommproject.png';
 import todoProjectImage from '../../assets/todoProject.png';
+import portfolioProjectImage from '../../assets/portfolioproject.png';
+
 import './projects-section.styles.scss';
 
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -23,26 +25,34 @@ const ProjectsSection = () => {
 		'Stripe API'
 	];
 	const todoListTechnologies = [ 'EJS', 'HTML', 'CSS', 'NodeJs', 'Express', 'MongoDB' ];
+	const portfolioTechnologies = [ 'ReactJs', 'Hooks', 'Sass', 'Material UI', 'Animation', 'Responsive' ];
 
 	return (
 		<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
 			<div className="projects-section">
 				<TextSection purple={false}>My Recent Projects</TextSection>
 				<Grid container spacing={2} direction="row" justify="space-evenly">
-					<SimpleCard
+					<ProjectCard
 						imageUrl={eCommProjectImage}
 						projectName="E-commerce"
 						projectLink="https://e-comm-website.herokuapp.com/"
 					>
 						{eCommerceTechnologies}
-					</SimpleCard>
-					<SimpleCard
+					</ProjectCard>
+					<ProjectCard
 						imageUrl={todoProjectImage}
 						projectName="To-Do list"
 						projectLink="https://aqueous-cove-47423.herokuapp.com/"
 					>
 						{todoListTechnologies}
-					</SimpleCard>
+					</ProjectCard>
+					<ProjectCard
+						imageUrl={portfolioProjectImage}
+						projectName="Portfolio"
+						projectLink="http://daniel-gaishuber.herokuapp.com/"
+					>
+						{portfolioTechnologies}
+					</ProjectCard>
 				</Grid>
 			</div>
 		</ScrollAnimation>

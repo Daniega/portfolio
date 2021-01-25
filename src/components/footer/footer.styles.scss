@@ -2,12 +2,16 @@
 	background-color: whitesmoke;
 	color: #444;
 	font-weight: 200;
-	opacity: 0.8;
-	font-size: 2vw;
 }
 
 @media screen and (min-width: 1200px) {
 	.footer {
 		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.footer {
+		font-size: 12px;
 	}
 }
