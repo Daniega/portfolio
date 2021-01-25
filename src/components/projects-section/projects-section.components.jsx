@@ -13,7 +13,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const ProjectsSection = () => {
 	const eCommerceTechnologies = [
-		'React',
+		'ReactJS',
 		'Redux',
 		'Redux-Saga',
 		'Hooks',
@@ -22,27 +22,13 @@ const ProjectsSection = () => {
 		'Firebase',
 		'Stripe API'
 	];
-	const todoListTechnologies = [ 'EJS', 'NodeJs', 'Express', 'MongoDB' ];
+	const todoListTechnologies = [ 'EJS', 'HTML', 'CSS', 'NodeJs', 'Express', 'MongoDB' ];
 
 	return (
-		<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+		<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
 			<div className="projects-section">
 				<TextSection purple={false}>My Recent Projects</TextSection>
 				<Grid container spacing={2} direction="row" justify="space-evenly">
-					{/* <Project
-					imageUrl={eCommProjectImage}
-					projectName="E-commerce"
-					projectLink="https://e-comm-website.herokuapp.com/"
-				>
-					{eCommerceTechnologies}
-				</Project>
-				<Project
-					imageUrl={todoProjectImage}
-					projectName="To-Do list"
-					projectLink="https://aqueous-cove-47423.herokuapp.com/"
-				>
-					{todoListTechnologies}
-				</Project> */}
 					<SimpleCard
 						imageUrl={eCommProjectImage}
 						projectName="E-commerce"

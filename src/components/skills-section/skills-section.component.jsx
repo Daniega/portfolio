@@ -27,7 +27,7 @@ const SkillsSection = () => {
 			<div className="skills-section-title normal-text heading-text">My Stack</div>
 			<Grid container spacing={2} justify="space-evenly" direction="row">
 				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
 						<div className="skill-container">
 							<div className="skill-title">Javascript</div>
 							<img src={javascriptLogo} alt="Javascript" height="80px" width="80px" />
@@ -35,7 +35,7 @@ const SkillsSection = () => {
 					</ScrollAnimation>
 				</Grid>
 				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
 						<div className="skill-container">
 							<div className="skill-title">MongoDB</div>
 							<img src={mongoLogo} alt="React" height="80px" width="80px" />
@@ -45,7 +45,7 @@ const SkillsSection = () => {
 			</Grid>
 			<Grid container spacing={2} justify="space-evenly" direction="row">
 				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
 						<div className="skill-container">
 							<div className="skill-title">React</div>
 							<img src={reactLogo} alt="React" height="80px" width="80px" />
@@ -53,7 +53,7 @@ const SkillsSection = () => {
 					</ScrollAnimation>
 				</Grid>
 				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
 						<div className="skill-container">
 							<div className="skill-title">Firebase</div>
 							<img src={firebaseLogo} alt="React" height="80px" width="80px" />
@@ -63,7 +63,7 @@ const SkillsSection = () => {
 			</Grid>
 			<Grid container spacing={2} justify="space-evenly" direction="row">
 				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
 						<div className="skill-container">
 							<div className="skill-title">Redux</div>
 							<img src={reduxLogo} alt="React" height="80px" width="80px" />
@@ -71,7 +71,7 @@ const SkillsSection = () => {
 					</ScrollAnimation>
 				</Grid>
 				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
 						<div className="skill-container">
 							<div className="skill-title">Scss</div>
 							<img src={sassLogo} alt="React" height="80px" width="80px" />
@@ -82,7 +82,7 @@ const SkillsSection = () => {
 
 			<Grid container spacing={2} justify="space-evenly" direction="row">
 				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
 						<div className="skill-container">
 							<div className="skill-title">NodeJs</div>
 							<img src={nodejsLogo} alt="React" height="80px" width="80px" />
@@ -90,7 +90,7 @@ const SkillsSection = () => {
 					</ScrollAnimation>
 				</Grid>
 				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
 						<div className="skill-container">
 							<div className="skill-title">Webpack</div>
 							<img src={webpackLogo} alt="React" height="80px" width="80px" />
@@ -100,7 +100,7 @@ const SkillsSection = () => {
 			</Grid>
 			<Grid container spacing={2} justify="space-evenly" direction="row">
 				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
 						<div className="skill-container">
 							<div className="skill-title">HTML5</div>
 							<img src={htmlLogo} alt="React" height="80px" width="80px" />
@@ -108,7 +108,7 @@ const SkillsSection = () => {
 					</ScrollAnimation>
 				</Grid>
 				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
 						<div className="skill-container">
 							<div className="skill-title">Git</div>
 							<img src={gitLogo} alt="React" height="80px" width="80px" />
@@ -118,7 +118,7 @@ const SkillsSection = () => {
 			</Grid>
 			<Grid container spacing={2} justify="space-evenly" direction="row">
 				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
 						<div className="skill-container">
 							<div className="skill-title">CSS3</div>
 							<img src={cssLogo} alt="React" height="80px" width="80px" />
@@ -126,7 +126,7 @@ const SkillsSection = () => {
 					</ScrollAnimation>
 				</Grid>
 				<Grid item>
-					<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+					<ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
 						<div className="skill-container">
 							<div className="skill-title">VS Code</div>
 							<img src={visualLogo} alt="React" height="80px" width="80px" />
