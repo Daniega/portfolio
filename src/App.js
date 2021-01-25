@@ -6,6 +6,7 @@ import Header from './components/header/header.component';
 import IntroSection from './components/intro-section/intro-section.component';
 import SkillsSection from './components/skills-section/skills-section.component';
 import ProjectsSection from './components/projects-section/projects-section.components';
+import AboutSection from './components/about-section/about-section.component';
 
 const App = () => {
 	return (
@@ -14,6 +15,7 @@ const App = () => {
 			<IntroSection />
 			<SkillsSection />
 			<ProjectsSection />
+			<AboutSection />
 			<Footer />
 		</div>
 	);

@@ -49,7 +49,7 @@ const ProjectsSection = () => {
 					<ProjectCard
 						imageUrl={portfolioProjectImage}
 						projectName="Portfolio"
-						projectLink="http://daniel-gaishuber.herokuapp.com/"
+						projectLink="https://daniel-gaishuber.herokuapp.com/"
 					>
 						{portfolioTechnologies}
 					</ProjectCard>

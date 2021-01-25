@@ -14,7 +14,7 @@ const IntroSection = () => {
 					alt="profile"
 				/>
 				<div className="hello-text">Hello.</div>
-				<span>I'm Daniel Gaishuber, a </span>
+				<span>I'm Daniel, a </span>
 				<span className="bold-purple">programmer</span>
 				<div className="five-stars">
 					<img src={fiveStars} alt="Stars" />
