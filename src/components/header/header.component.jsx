@@ -4,7 +4,7 @@ import './header.styles.scss';
 const Header = () => {
 	return (
 		<div className="header">
-			<h1>Header ProjectsLink SummaryLink StackLink ContactLink</h1>
+			<h1>Header</h1>
 		</div>
 	);
 };

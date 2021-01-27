@@ -1,17 +1,5 @@
 .main-component {
 	margin: 20px 10% 20px 10%;
-}
-
-.image-container {
-	flex: 1 1 auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 20px 0 20px;
-	overflow: hidden;
-	border-top: 2px solid #fb275d;
-	border-bottom: 2px solid #fb275d;
-	position: relative;
 
 	&:hover {
 		cursor: pointer;
@@ -23,6 +11,18 @@
 			opacity: 0.9;
 		}
 	}
+}
+
+.image-container {
+	flex: 1 1 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px 0 20px;
+	overflow: hidden;
+	// border-top: 2px solid #fb275d;
+	// border-bottom: 2px solid #fb275d;
+	position: relative;
 }
 
 .technology {
@@ -62,10 +62,12 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	border-top: 2px solid #fb275d;
+	border-bottom: 2px solid #fb275d;
 	// border: 1px solid #fb275d;
 	background-color: white;
-	opacity: 0.9;
 	position: absolute;
+	opacity: 0;
 	&:hover {
 		background-color: #fb275d;
 		color: white;

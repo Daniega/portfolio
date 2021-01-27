@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 
 //components
 import TextSection from '../text-section/text-section.component';
-import ProjectCard from '../project/project-card';
+import ProjectCard from '../project/project-card.component';
 
 import eCommProjectImage from '../../assets/ecommproject.png';
 import todoProjectImage from '../../assets/todoProject.png';
