@@ -5,6 +5,10 @@ import TextSection from '../text-section/text-section.component';
 //material UI
 import Button from '@material-ui/core/Button';
 
+//fontAwesomeIcons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+
 import './about-section.styles.scss';
 
 const AboutSection = () => {
@@ -19,13 +23,18 @@ const AboutSection = () => {
                have built my <span className='green-text'>skills</span> to proficiency. I would be happy to{' '}
                <span className='pink-text'>develop & design</span> your future projects!
             </p>
-            <Button
-               variant='contained'
-               size='medium'
-               style={{ marginLeft: '5%', marginRight: '5%', backgroundColor: 'white' }}
-            >
-               Contact Me
-            </Button>
+            <div className='flex-button'>
+               <Button
+                  variant='contained'
+                  size='medium'
+                  style={{ marginLeft: '5%', marginRight: '5%', backgroundColor: 'white' }}
+               >
+                  Contact Me
+               </Button>
+               <span className='credit-text'>
+                  <FontAwesomeIcon icon={faCheckCircle} /> No Credit Card Required ;)
+               </span>
+            </div>
          </div>
       </div>
    );

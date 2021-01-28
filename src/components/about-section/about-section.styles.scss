@@ -7,26 +7,39 @@
 
    .flex-description {
       margin-top: 50px;
-
       display: flex;
       flex-direction: row;
       align-items: center;
+      justify-content: space-around;
       flex-wrap: wrap;
    }
 
    .about-text {
-      font-size: 26px;
+      font-size: 1.5rem;
       font-weight: 600;
+      padding-left: 5%;
+      padding-right: 5%;
       margin-bottom: 50px;
-
       color: white;
-      margin-left: 5%;
-      margin-right: 5%;
       flex: 2;
+
+      @media screen and (max-width: 400px) {
+         font-size: 0.85rem;
+      }
    }
 
-   Button {
-      flex: 1;
+   .flex-button {
+      margin-left: 20px;
+      margin-right: 20px;
+      color: lightgray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .credit-text {
+      margin-top: 10px;
+      margin-bottom: 10px;
    }
 }
 
@@ -38,9 +51,11 @@
 .green-text {
    color: #61ce70;
    font-weight: 600;
+   -webkit-text-stroke: 1px white;
 }
 
 .pink-text {
    color: #fb275d;
    font-weight: 600;
+   -webkit-text-stroke: 1px white;
 }
