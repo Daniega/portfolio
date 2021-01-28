@@ -5,9 +5,9 @@ import Grid from '@material-ui/core/Grid';
 import TextSection from '../text-section/text-section.component';
 import ProjectCard from '../project/project-card.component';
 //project images
-import eCommProjectImage from '../../assets/ecommproject.png';
-import todoProjectImage from '../../assets/todoProject.png';
-import portfolioProjectImage from '../../assets/portfolioproject.png';
+import eCommProjectImage from '../../assets/ecommproject.jpg';
+import todoProjectImage from '../../assets/todoProject.jpg';
+import portfolioProjectImage from '../../assets/portfolioproject.jpg';
 //constants
 import { ANIMATION_DURATION } from '../../constants/animation';
 //stylesheet
