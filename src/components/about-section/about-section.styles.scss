@@ -43,6 +43,13 @@
       margin-top: 10px;
       margin-bottom: 10px;
    }
+
+   .button-link {
+      text-decoration: none;
+      cursor: pointer;
+      margin-left: 5%;
+      margin-right: 5%;
+   }
 }
 
 .purple-text {
@@ -53,11 +60,11 @@
 .green-text {
    color: #61ce70;
    font-weight: 600;
-   -webkit-text-stroke: 1px white;
+   // -webkit-text-stroke: 1px white;
 }
 
 .pink-text {
    color: #fb275d;
    font-weight: 600;
-   -webkit-text-stroke: 1px white;
+   // -webkit-text-stroke: 1px white;
 }

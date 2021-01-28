@@ -24,13 +24,12 @@ const AboutSection = () => {
                <span className='pink-text'>develop & design</span> your future projects!
             </p>
             <div className='flex-button'>
-               <Button
-                  variant='contained'
-                  size='large'
-                  style={{ marginLeft: '5%', marginRight: '5%', backgroundColor: 'white' }}
-               >
-                  Contact Me
-               </Button>
+               <a href='mailto:daniel.gaishuber@gmail.com' className='button-link'>
+                  <Button variant='contained' size='large' style={{ backgroundColor: 'white' }}>
+                     Contact Me
+                  </Button>
+               </a>
+
                <span className='credit-text'>
                   <FontAwesomeIcon icon={faCheckCircle} /> No Credit Card Required ;)
                </span>
