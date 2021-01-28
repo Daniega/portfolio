@@ -26,7 +26,7 @@ const AboutSection = () => {
             <div className='flex-button'>
                <Button
                   variant='contained'
-                  size='medium'
+                  size='large'
                   style={{ marginLeft: '5%', marginRight: '5%', backgroundColor: 'white' }}
                >
                   Contact Me
