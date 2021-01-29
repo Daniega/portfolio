@@ -17,7 +17,7 @@ const IntroSection = () => {
             <img src={myPic} alt='profile' />
             <div className='hello-text'>Hello.</div>
             <span>I'm Daniel, a </span>
-            <span className='bold-purple'>programmer</span>
+            <span className='bold-purple'>Web Developer</span>
             <div className='five-stars'>
                <img src={fiveStars} alt='Stars' />
             </div>
