@@ -31,7 +31,7 @@ const ProjectsSection = () => {
 
    return (
       <ScrollAnimation animateIn='fadeIn' duration={ANIMATION_DURATION} animateOnce={true}>
-         <div className='projects-section'>
+         <div className='projects-section' name='projects'>
             <TextSection purple={false}>My Recent Projects</TextSection>
             <Grid container spacing={2} direction='row' justify='space-evenly'>
                <ProjectCard

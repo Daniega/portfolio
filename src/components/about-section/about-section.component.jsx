@@ -13,7 +13,7 @@ import './about-section.styles.scss';
 
 const AboutSection = () => {
    return (
-      <div className='about-section'>
+      <div className='about-section' name='about'>
          <TextSection white={true}>Thank you for peeking at my portfolio</TextSection>
          <div className='flex-description'>
             <p className='about-text'>

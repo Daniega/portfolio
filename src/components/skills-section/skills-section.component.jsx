@@ -26,35 +26,35 @@ import './skills-section.styles.scss';
 //TODO - create a new component for every Grid section for a reusable, short code
 
 const SkillsSection = () => {
-	return (
-		<div className="skills-section">
-			<div className="skills-section-title normal-text heading-text">My Stack</div>
-			<Grid container spacing={2} justify="space-evenly" direction="row">
-				<Skill skillTitle="Javascript" skillLogo={javascriptLogo} />
-				<Skill skillTitle="MongoDB" skillLogo={mongoLogo} />
-			</Grid>
-			<Grid container spacing={2} justify="space-evenly" direction="row">
-				<Skill skillTitle="React" skillLogo={reactLogo} />
-				<Skill skillTitle="Firebase" skillLogo={firebaseLogo} />
-			</Grid>
-			<Grid container spacing={2} justify="space-evenly" direction="row">
-				<Skill skillTitle="Redux" skillLogo={reduxLogo} />
-				<Skill skillTitle="Scss" skillLogo={sassLogo} />
-			</Grid>
-			<Grid container spacing={2} justify="space-evenly" direction="row">
-				<Skill skillTitle="NodeJs" skillLogo={nodejsLogo} />
-				<Skill skillTitle="Webpack" skillLogo={webpackLogo} />
-			</Grid>
-			<Grid container spacing={2} justify="space-evenly" direction="row">
-				<Skill skillTitle="HTML5" skillLogo={htmlLogo} />
-				<Skill skillTitle="Git" skillLogo={gitLogo} />
-			</Grid>
-			<Grid container spacing={2} justify="space-evenly" direction="row">
-				<Skill skillTitle="CSS3" skillLogo={cssLogo} />
-				<Skill skillTitle="VS Code" skillLogo={visualLogo} />
-			</Grid>
-		</div>
-	);
+   return (
+      <div className='skills-section' name='skills'>
+         <div className='skills-section-title normal-text heading-text'>My Stack</div>
+         <Grid container spacing={2} justify='space-evenly' direction='row'>
+            <Skill skillTitle='Javascript' skillLogo={javascriptLogo} />
+            <Skill skillTitle='MongoDB' skillLogo={mongoLogo} />
+         </Grid>
+         <Grid container spacing={2} justify='space-evenly' direction='row'>
+            <Skill skillTitle='React' skillLogo={reactLogo} />
+            <Skill skillTitle='Firebase' skillLogo={firebaseLogo} />
+         </Grid>
+         <Grid container spacing={2} justify='space-evenly' direction='row'>
+            <Skill skillTitle='Redux' skillLogo={reduxLogo} />
+            <Skill skillTitle='Scss' skillLogo={sassLogo} />
+         </Grid>
+         <Grid container spacing={2} justify='space-evenly' direction='row'>
+            <Skill skillTitle='NodeJs' skillLogo={nodejsLogo} />
+            <Skill skillTitle='Webpack' skillLogo={webpackLogo} />
+         </Grid>
+         <Grid container spacing={2} justify='space-evenly' direction='row'>
+            <Skill skillTitle='HTML5' skillLogo={htmlLogo} />
+            <Skill skillTitle='Git' skillLogo={gitLogo} />
+         </Grid>
+         <Grid container spacing={2} justify='space-evenly' direction='row'>
+            <Skill skillTitle='CSS3' skillLogo={cssLogo} />
+            <Skill skillTitle='VS Code' skillLogo={visualLogo} />
+         </Grid>
+      </div>
+   );
 };
 
 export default SkillsSection;
