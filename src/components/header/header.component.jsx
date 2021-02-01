@@ -6,7 +6,6 @@ import { Link } from 'react-scroll';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -41,11 +40,14 @@ const Header = () => {
 
    return (
       <div className={classes.root}>
-         <AppBar position='fixed' style={{ backgroundColor: '#7805f7' }}>
+         <AppBar
+            position='fixed'
+            style={{
+               backgroundColor : '#7805f7',
+               flexDirection   : 'row-reverse'
+            }}
+         >
             <Toolbar>
-               <Typography variant='h6' className={classes.title}>
-                  Photos
-               </Typography>
                <div>
                   <IconButton
                      edge='start'
@@ -80,6 +82,7 @@ const Header = () => {
                            to='skills'
                            smooth={true}
                            duration={700}
+                           offset={-20}
                         >
                            Skills
                         </Link>

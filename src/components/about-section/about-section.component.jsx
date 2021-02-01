@@ -17,8 +17,8 @@ const AboutSection = () => {
          <TextSection white={true}>Thank you for peeking at my portfolio</TextSection>
          <div className='flex-description'>
             <p className='about-text'>
-               My name is Daniel Gaishuber and i'm a <span className='pink-text'>Software Engineer</span>. I graduated
-               and started my journey of becoming a <span className='green-text'>great </span>
+               My name is Daniel Gaishuber and i'm a <span className='pink-text'>Software Engineer</span>.<br />I
+               graduated and started my journey of becoming a <span className='green-text'>great </span>
                <span className='pink-text'>Web developer</span>! After many courses, trials and personal projects, I
                have built my <span className='green-text'>skills</span> to proficiency. I would be happy to{' '}
                <span className='pink-text'>develop & design</span> your future projects!
