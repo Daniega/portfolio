@@ -23,8 +23,6 @@ import Skill from '../skill/skill.component';
 //Stylesheet
 import './skills-section.styles.scss';
 
-//TODO - create a new component for every Grid section for a reusable, short code
-
 const SkillsSection = () => {
    return (
       <div className='skills-section' name='skills'>

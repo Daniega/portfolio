@@ -1,0 +1,19 @@
+.social-links-section {
+   width: 30%;
+   margin: 20px auto 20px auto;
+
+   .social-text {
+      margin-bottom: 10px;
+   }
+
+   .social-icons {
+      display: flex;
+      justify-content: space-around;
+      .icon {
+         &:hover {
+            transform: scale(1.1);
+            transition: transform .2s;
+         }
+      }
+   }
+}
