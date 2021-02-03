@@ -69,3 +69,13 @@
    font-weight: 600;
    // -webkit-text-stroke: 1px white;
 }
+
+.material-button {
+   background-color: white !important;
+
+   &:hover {
+      background-color: lightgray !important;
+      transform: scale(1.05);
+      transition: transform .2s;
+   }
+}

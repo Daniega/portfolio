@@ -2,10 +2,10 @@ import React from 'react';
 
 //components
 import TextSection from '../text-section/text-section.component';
-//material UI
+//material UI imports
 import Button from '@material-ui/core/Button';
 
-//fontAwesomeIcons
+//fontAwesomeIcons import
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
@@ -25,7 +25,15 @@ const AboutSection = () => {
             </p>
             <div className='flex-button'>
                <a href='mailto:daniel.gaishuber@gmail.com' className='button-link'>
-                  <Button variant='contained' size='large' style={{ backgroundColor: 'white' }}>
+                  <Button
+                     variant='contained'
+                     size='large'
+                     className='material-button'
+                     // style={{
+                     //    backgroundColor : 'white',
+                     //    hover           : { '&:hover': { backgroundColor: 'rgb(7, 177, 77, 0.42)' } }
+                     // }}
+                  >
                      Contact Me
                   </Button>
                </a>

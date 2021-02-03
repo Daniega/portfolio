@@ -8,6 +8,7 @@
       }
       & .image-link {
          opacity: 0.9;
+         transition: .2s;
       }
    }
 }
@@ -69,8 +70,8 @@
    opacity: 0;
    &:hover {
       cursor: pointer;
-
       background-color: #fb275d;
       color: white;
+      transition: .2s;
    }
 }
