@@ -8,7 +8,9 @@ import './social-links.styles.scss';
 const SocialLinksSection = () => {
    return (
       <div className='social-links-section'>
-         <span className='social-text'>Follow or contact me on socials:</span>
+         <div className='social-text'>
+            <span className='text'>Contact me on socials:</span>
+         </div>
 
          <div className='social-icons'>
             {social.map(({ id, name, link, icon }) => (
