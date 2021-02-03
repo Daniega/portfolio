@@ -11,7 +11,7 @@ import './social-links.styles.scss';
 
 const SocialLinksSection = () => {
    return (
-      <ScrollAnimation animateIn='pulse' duration={ANIMATION_DURATION} animateOnce={true}>
+      <ScrollAnimation animateIn='pulse' duration={ANIMATION_DURATION} animateOnce={true} offset={50}>
          <div className='social-links-section'>
             <div className='social-text'>
                <span className='text'>Contact me on socials:</span>
