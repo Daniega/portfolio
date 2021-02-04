@@ -12,11 +12,13 @@ body {
 
 .App-dark {
    background-color: #252627;
+   transition: .2s;
 }
 
 .App-light {
    margin-top: 0;
    background-color: #fff;
+   transition: .2s;
 }
 
 .bold-purple {
