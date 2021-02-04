@@ -1,27 +1,43 @@
-.App {
-	text-align: center;
-	margin-top: 0;
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+   margin: 0;
+   font-family: 'Lato', sans-serif;
+   color: #444;
+   text-align: center;
+}
+
+.App-dark {
+   background-color: #252627;
+}
+
+.App-light {
+   margin-top: 0;
+   background-color: #fff;
 }
 
 .bold-purple {
-	color: #7805f7;
+   color: #7805f7;
 }
 
 .heading-text {
-	font-weight: 800;
+   font-weight: 800;
 }
 
 .bold-purple-underline {
-	color: #7805f7;
-	text-decoration: underline;
+   color: #7805f7;
+   text-decoration: underline;
 }
 
 .normal-text {
-	font-size: 3vw;
+   font-size: 3vw;
 }
 
 @media screen and (min-width: 1200px) {
-	.normal-text {
-		font-size: 30px;
-	}
+   .normal-text {
+      font-size: 30px;
+   }
 }

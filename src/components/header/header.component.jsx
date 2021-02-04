@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 //react-scroll
 import { Link } from 'react-scroll';
 
-//material UI
+//material NavBar
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -10,6 +10,9 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
+//Material Switch button
+import Switch from '@material-ui/core/Switch';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
 //stylesheet
 import './header.styles.scss';
 
@@ -18,16 +21,17 @@ const useStyles = makeStyles((theme) => ({
       flexGrow : 1
    },
    menuButton : {
-      marginRight : theme.spacing(2)
+      marginRight : theme.spacing(2),
+      marginLeft  : theme.spacing(2)
    },
    title      : {
       flexGrow : 1
    }
 }));
 
-const Header = () => {
+const Header = ({ darkSwitchPress, darkModeState }) => {
    const classes = useStyles();
-   const [ anchorEl, setAnchorEl ] = React.useState(null);
+   const [ anchorEl, setAnchorEl ] = useState(null);
    const open = Boolean(anchorEl);
 
    const handleMenu = (event) => {
@@ -49,6 +53,13 @@ const Header = () => {
          >
             <Toolbar>
                <div>
+                  <FormControlLabel
+                     value='start'
+                     control={<Switch color='primary' checked={darkModeState} />}
+                     label='Dark'
+                     labelPlacement='start'
+                     onClick={darkSwitchPress}
+                  />
                   <IconButton
                      edge='start'
                      className={classes.menuButton}
