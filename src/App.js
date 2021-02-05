@@ -29,13 +29,17 @@ const App = () => {
       setDarkMode((prevMode) => !prevMode);
    };
 
+   const getDarkModeState = () => {
+      return darkMode;
+   };
+
    return (
       <div className={darkMode ? 'App-dark' : 'App-light'}>
          <Header darkSwitchPress={handleDarkMode} darkModeState={darkMode} />
          <IntroSection />
-         <SkillsSection />
-         <ProjectsSection />
-         <AboutSection />
+         <SkillsSection darkModeState={getDarkModeState} />
+         <ProjectsSection darkModeState={darkMode} />
+         <AboutSection darkModeState={darkMode} />
          <SocialLinksSection />
          <Footer />
       </div>

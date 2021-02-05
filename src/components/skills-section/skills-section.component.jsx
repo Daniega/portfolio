@@ -23,9 +23,9 @@ import Skill from '../skill/skill.component';
 //Stylesheet
 import './skills-section.styles.scss';
 
-const SkillsSection = () => {
+const SkillsSection = ({ darkModeState }) => {
    return (
-      <div className='skills-section' name='skills'>
+      <div className={darkModeState() ? 'skills-section-dark' : 'skills-section-light'} name='skills'>
          <div className='skills-section-title normal-text heading-text'>My Stack</div>
          <Grid container spacing={2} justify='space-evenly' direction='row'>
             <Skill skillTitle='Javascript' skillLogo={javascriptLogo} />
