@@ -26,7 +26,7 @@ const ProjectsSection = ({ darkModeState }) => {
       'Stripe API'
    ];
    const todoListTechnologies = [ 'EJS', 'HTML', 'CSS', 'NodeJs', 'Express', 'MongoDB' ];
-   const portfolioTechnologies = [ 'ReactJs', 'Hooks', 'Sass', 'Material UI', 'Animation', 'Responsive' ];
+   const portfolioTechnologies = [ 'ReactJs', 'Hooks', 'Sass', 'Material UI', 'Animation', 'Responsive', 'Dark mode' ];
 
    return (
       <ScrollAnimation animateIn='fadeIn' duration={ANIMATION_DURATION} animateOnce={true}>

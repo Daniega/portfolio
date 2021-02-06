@@ -36,12 +36,12 @@ const App = () => {
    return (
       <div className={darkMode ? 'App-dark' : 'App-light'}>
          <Header darkSwitchPress={handleDarkMode} darkModeState={darkMode} />
-         <IntroSection />
+         <IntroSection darkModeState={getDarkModeState} />
          <SkillsSection darkModeState={getDarkModeState} />
          <ProjectsSection darkModeState={getDarkModeState} />
          <AboutSection darkModeState={getDarkModeState} />
          <SocialLinksSection />
-         <Footer />
+         <Footer darkModeState={getDarkModeState} />
       </div>
    );
 };
