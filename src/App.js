@@ -38,8 +38,8 @@ const App = () => {
          <Header darkSwitchPress={handleDarkMode} darkModeState={darkMode} />
          <IntroSection />
          <SkillsSection darkModeState={getDarkModeState} />
-         <ProjectsSection darkModeState={darkMode} />
-         <AboutSection darkModeState={darkMode} />
+         <ProjectsSection darkModeState={getDarkModeState} />
+         <AboutSection darkModeState={getDarkModeState} />
          <SocialLinksSection />
          <Footer />
       </div>

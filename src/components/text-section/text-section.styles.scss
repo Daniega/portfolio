@@ -1,42 +1,42 @@
 .text-section {
-	font-weight: 800;
-	margin: 50px auto 50px auto;
+   font-weight: 800;
+   margin: 50px auto 50px auto;
 }
 
 .text-section-purple {
-	font-weight: 800;
+   font-weight: 800;
 }
 
 .text-section-white {
-	font-weight: 800;
-	color: white;
+   font-weight: 800;
+   color: white;
 }
 
 @media screen and (min-width: 800px) {
-	.text-section {
-		font-size: 30px;
-	}
+   .text-section {
+      font-size: 30px;
+   }
 
-	.text-section-purple {
-		font-size: 30px;
-	}
+   .text-section-purple {
+      font-size: 30px;
+   }
 
-	.text-section-white {
-		font-size: 30px;
-		color: white;
-	}
+   .text-section-white {
+      font-size: 30px;
+      color: white;
+   }
 }
 
 @media screen and (max-width: 800px) {
-	.text-section {
-		font-size: 18px;
-	}
+   .text-section {
+      font-size: 18px;
+   }
 
-	.text-section-purple {
-		font-size: 18px;
-	}
-	.text-section-white {
-		font-size: 18px;
-		color: white;
-	}
+   .text-section-purple {
+      font-size: 18px;
+   }
+   .text-section-white {
+      font-size: 18px;
+      color: white;
+   }
 }

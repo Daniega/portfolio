@@ -3,8 +3,31 @@
    padding-bottom: 50px;
    padding-left: 3%;
    padding-right: 3%;
+   transition: .2s;
+}
 
+.projects-light {
    border: dotted 15px #f8f8f8;
+}
+
+.projects-dark {
+   border: dotted 15px #464646;
+}
+
+.title-dark {
+   color: rgb(112, 112, 112);
+}
+
+.projects-section-title {
+   padding-top: 50px;
+   margin-bottom: 50px;
+   font-size: 38;
+}
+
+@media screen and (max-width: 800px) {
+   .projects-section-title {
+      font-size: 4vw;
+   }
 }
 
 //		box-shadow: 2px 2px 4px #fb275d;

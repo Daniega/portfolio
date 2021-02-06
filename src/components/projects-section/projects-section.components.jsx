@@ -2,7 +2,6 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 
 //components
-import TextSection from '../text-section/text-section.component';
 import ProjectCard from '../project/project-card.component';
 //project images
 import eCommProjectImage from '../../assets/ecommproject.jpg';
@@ -15,7 +14,7 @@ import './projects-section.styles.scss';
 //Scroll Animation
 import ScrollAnimation from 'react-animate-on-scroll';
 
-const ProjectsSection = () => {
+const ProjectsSection = ({ darkModeState }) => {
    const eCommerceTechnologies = [
       'ReactJS',
       'Redux',
@@ -31,13 +30,16 @@ const ProjectsSection = () => {
 
    return (
       <ScrollAnimation animateIn='fadeIn' duration={ANIMATION_DURATION} animateOnce={true}>
-         <div className='projects-section' name='projects'>
-            <TextSection purple={false}>My Recent Projects</TextSection>
+         <div className={`projects-section ${darkModeState() ? 'projects-dark' : 'projects-light'}`} name='projects'>
+            <div className={`projects-section-title normal-text heading-text ${darkModeState() ? 'title-dark' : null}`}>
+               My Recent Projects
+            </div>
             <Grid container spacing={2} direction='row' justify='space-evenly'>
                <ProjectCard
                   imageUrl={eCommProjectImage}
                   projectName='E-commerce'
                   projectLink='https://e-comm-website.herokuapp.com/'
+                  darkModeState={darkModeState}
                >
                   {eCommerceTechnologies}
                </ProjectCard>
@@ -45,6 +47,7 @@ const ProjectsSection = () => {
                   imageUrl={todoProjectImage}
                   projectName='To-Do list'
                   projectLink='https://aqueous-cove-47423.herokuapp.com/'
+                  darkModeState={darkModeState}
                >
                   {todoListTechnologies}
                </ProjectCard>
@@ -52,6 +55,7 @@ const ProjectsSection = () => {
                   imageUrl={portfolioProjectImage}
                   projectName='Portfolio'
                   projectLink='https://daniel-gaishuber.herokuapp.com/'
+                  darkModeState={darkModeState}
                >
                   {portfolioTechnologies}
                </ProjectCard>

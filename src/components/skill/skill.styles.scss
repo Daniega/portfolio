@@ -1,20 +1,21 @@
 .skill-title {
-	margin: 20px auto 20px auto;
+   margin: 20px auto 20px auto;
+   color: rgb(112, 112, 112);
 }
 
 .skill-container {
-	width: 130px;
-	height: fit-content;
+   width: 130px;
+   height: fit-content;
 }
 
 @media screen and (min-width: 800px) {
-	.skill-title {
-		font-size: 22px;
-	}
+   .skill-title {
+      font-size: 22px;
+   }
 }
 
 @media screen and (max-width: 800px) {
-	.skill-title {
-		font-size: 12px;
-	}
+   .skill-title {
+      font-size: 12px;
+   }
 }
