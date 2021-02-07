@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 
 //style sheet
 import './project-card.styles.scss';
@@ -26,8 +27,9 @@ const useStyles = makeStyles({
    },
 
    description : {
-      margin    : '10px 20px',
-      textAlign : 'left'
+      margin       : '10px 20px',
+      textAlign    : 'left',
+      marginBottom : '20px'
    },
 
    list        : {
@@ -36,7 +38,7 @@ const useStyles = makeStyles({
    }
 });
 
-const ProjectCard = ({ imageUrl, projectName, projectLink, children, darkModeState }) => {
+const ProjectCard = ({ imageUrl, projectName, projectLink, githubLink, children, darkModeState }) => {
    const classes = useStyles();
    const projectTechnologies = children; //get project description from props.children
    return (
@@ -51,7 +53,7 @@ const ProjectCard = ({ imageUrl, projectName, projectLink, children, darkModeSta
             <div className='image-container'>
                <img className='project-image' src={imageUrl} alt={projectName} />
                <a href={projectLink} className='image-link'>
-                  Show me
+                  SHOW ME
                </a>
             </div>
 
@@ -65,6 +67,9 @@ const ProjectCard = ({ imageUrl, projectName, projectLink, children, darkModeSta
                   );
                })}
             </Typography>
+            <Button href={githubLink} color='secondary' className='github-link'>
+               Github Link
+            </Button>
          </CardContent>
       </Card>
    );

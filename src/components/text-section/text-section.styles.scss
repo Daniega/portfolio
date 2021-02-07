@@ -12,7 +12,7 @@
    color: white;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) {
    .text-section {
       font-size: 30px;
    }
@@ -27,7 +27,7 @@
    }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
    .text-section {
       font-size: 18px;
    }

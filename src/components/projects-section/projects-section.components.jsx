@@ -39,6 +39,7 @@ const ProjectsSection = ({ darkModeState }) => {
                   imageUrl={eCommProjectImage}
                   projectName='E-commerce'
                   projectLink='https://e-comm-website.herokuapp.com/'
+                  githubLink='https://github.com/Daniega/e-commerece-website'
                   darkModeState={darkModeState}
                >
                   {eCommerceTechnologies}
@@ -47,6 +48,7 @@ const ProjectsSection = ({ darkModeState }) => {
                   imageUrl={todoProjectImage}
                   projectName='To-Do list'
                   projectLink='https://aqueous-cove-47423.herokuapp.com/'
+                  githubLink='https://github.com/Daniega/todolist-with-db'
                   darkModeState={darkModeState}
                >
                   {todoListTechnologies}
@@ -55,6 +57,7 @@ const ProjectsSection = ({ darkModeState }) => {
                   imageUrl={portfolioProjectImage}
                   projectName='Portfolio'
                   projectLink='https://daniel-gaishuber.herokuapp.com/'
+                  githubLink='https://github.com/Daniega/portfolio'
                   darkModeState={darkModeState}
                >
                   {portfolioTechnologies}
