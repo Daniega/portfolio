@@ -25,6 +25,7 @@ const projects = [
 			'Styled components',
 			'Firebase',
 			'Stripe API',
+			'Responsive',
 		],
 		name: 'E-commerce',
 		link: 'https://e-comm-website.herokuapp.com/',
